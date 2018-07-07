@@ -1,0 +1,28 @@
+.navigation {
+  margin-top: 16px;
+  &__list {
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0;
+    list-style: none;
+    li {
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 400;
+      a {
+        display: block;
+        padding-bottom: 16px;
+        color: $grey-text;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.active {
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid $active-color;
+}
