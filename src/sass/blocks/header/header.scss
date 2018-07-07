@@ -1,4 +1,35 @@
-.main-header {
-  padding-top: 12px;
-  background: #eeeeee;
+.header {
+  padding-top: 14px;
+  background: $bg-header;
+  &__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__user {
+    a {
+      position: relative;
+      margin: 0;
+      margin-right: 28px;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $grey-text;
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 10px;
+        height: 20px;
+        left: -20px;
+        top: 2px;
+        background-image: url('../../../img/phone-icon.png');
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
