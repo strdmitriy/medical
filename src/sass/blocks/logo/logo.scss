@@ -3,17 +3,26 @@
   justify-content: flex-start;
   &__img {
     width: 48px;
-    height: 51px;
+    height: 48px;
   }
   &__text {
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 180px;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $grey-text
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    &__text {
+      display: block;
+      margin: 0;
+      padding-top: 10px;
+      padding-left: 10px;
+      width: 180px;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $grey-text
+    }
   }
 }
