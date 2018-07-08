@@ -1,28 +1,96 @@
 .navigation {
-  margin-top: 16px;
+  display: none;
   &__list {
     display: flex;
     padding-left: 0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     font-size: 0;
     list-style: none;
     li {
+      text-align: center;
       font-size: 14px;
       line-height: 14px;
       font-weight: 400;
       a {
         display: block;
-        padding-bottom: 16px;
+        padding: 15px 0;
         color: $grey-text;
         text-decoration: none;
+        &:hover {
+          color: $active-color;
+        }
+      }
+    }
+  }
+  &__entry {
+    position: relative;
+    display: block;
+    background: $active-color;
+    &:hover {
+      background: $actvie-hover;
+    }
+    &:active {
+      box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    }
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 21px;
+      height: 21px;
+      left: 38%;
+      top: 13px;
+      transform: translate(-20%);
+      background-image: url('../../../img/accaunt-icon.png');
+      background-repeat: no-repeat;
+    }
+  }
+  .navigation__entry-link {
+    color: $white;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .navigation {
+    &__entry {
+      &::before {
+        left: 42%;
       }
     }
   }
 }
 
-.active {
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 2px solid $active-color;
+
+@media (min-width: 1140px) {
+  .navigation {
+    display: block;
+    margin-top: 16px;
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        text-align: left;
+        a {
+          padding-bottom: 0 0 16px 0;
+        }
+      }
+    }
+    &__entry {
+      display: none;
+    }
+  }
+  .active {
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid $active-color;
+  }
+}
+
+
+.menu--visible {
+  display: block;
 }

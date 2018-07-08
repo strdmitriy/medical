@@ -1,8 +1,9 @@
 .btn-user {
   position: relative;
+  display: none;
   box-sizing: border-box;
   height: 44px;
-  padding: 10px 20px 9px 52px;
+  padding: 20px 30px;
   background: $active-color;
   border-radius: 5px;
   font-size: 14px;
@@ -13,6 +14,9 @@
   outline: none;
   cursor: pointer;
   border: none;
+  span {
+    display: none;
+  }
   &::before {
     position: absolute;
     display: block;
@@ -25,9 +29,20 @@
     background-repeat: no-repeat;
   }
   &:hover {
-    background: #e82445;
+    background: $actvie-hover;
   }
   &:active {
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  }
+}
+
+
+@media (min-width: 1140px) {
+  .btn-user {
+    display: initial;
+    padding: 10px 20px 9px 52px;
+    span {
+      display: inline;
+    }
   }
 }
