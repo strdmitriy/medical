@@ -1,8 +1,8 @@
 
   .toggle {
     position: absolute;
-    top: 14px;
-    right: 36px;
+    top: 10px;
+    right: 20px;
     z-index: 2;
 
     display: block;
@@ -37,8 +37,8 @@
     }
   }
   .toggle.toggle--opened {
-    top: 13px;
-    right: 37px;
+    top: 10px;
+    right: 20px;
 
     background-color: transparent;
 
