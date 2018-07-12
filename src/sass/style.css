@@ -4,8 +4,11 @@
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "blocks/slick/slick.scss";
+@import "blocks/slick/slick-theme.scss";
 @import "blocks/header/header.scss";
 @import "blocks/toggle/toggle.scss";
 @import "blocks/logo/logo.scss";
 @import "blocks/btn-user/btn-user.scss";
 @import "blocks/navigation/navigation.scss";
+@import "blocks/slider/slider.scss";
+@import "blocks/btn-slider/btn-slider.scss";
