@@ -1,0 +1,57 @@
+.programm {
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  padding-bottom: 25px;
+  background: $bg-tab;
+  margin-bottom: 25px;
+  transition:all 0.5s 0s; 
+  &:hover {
+    box-shadow: 0px 1px 20px 0px rgba(50, 50, 50, 0.4);
+    transition:all 0.5s 0s;
+  }
+  &__img {
+    display: flex;
+    align-items: flex-end;
+    width: 270px;
+    height: 160px;
+    background-image: url('../../../img/teraphy.jpg');
+    background-repeat: no-repeat;
+  }
+  &__date {
+    position: relative;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    background: $bg-date;
+    color: $white;
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 83%;
+      height: 2px;
+      right: -122px;
+      bottom: 0;
+      background: $bg-date;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-left: 25px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700;
+    color: $grey-text;
+  }
+  &__text {
+    margin: 0;
+    margin-left: 25px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: $grey-text;
+  }
+}

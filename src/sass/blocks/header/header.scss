@@ -1,5 +1,6 @@
 .header {
   background: $bg-header;
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
   &__contact {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +42,9 @@
 @media (min-width: 768px) {
   .header {
     padding-top: 14px;
+    &__contact {
+      justify-content: space-around;
+    }
     &__user {
       a {
         font-size: 16px;
@@ -49,9 +53,6 @@
         }
       }
     }
-    hr {
-      margin: 7px 0px;
-    }
   }
 }
 
@@ -59,6 +60,9 @@
   .header {
     &__contact {
       justify-content: space-between;
+    }
+    hr {
+      margin: 7px 0px;
     }
   }
 }

@@ -14,12 +14,22 @@
       font-weight: 400;
       a {
         display: block;
-        padding: 15px 0;
+        padding: 8px 0;
         color: $grey-text;
         text-decoration: none;
         &:hover {
           color: $active-color;
         }
+      }
+    }
+    &--tab {
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      li {
+        font-size: 18px;
+        font-weight: 500;
+        color: $grey-text;
       }
     }
   }
@@ -40,7 +50,7 @@
       width: 21px;
       height: 21px;
       left: 38%;
-      top: 13px;
+      top: 5px;
       transform: translate(-20%);
       background-image: url('../../../img/accaunt-icon.png');
       background-repeat: no-repeat;
@@ -76,6 +86,18 @@
         text-align: left;
         a {
           padding-bottom: 0 0 16px 0;
+        }
+      }
+      &--tab {
+        li {
+          font-size: 18px;
+          font-weight: 500;
+          padding-bottom: 25px;
+          color: $grey-text;
+        }
+        .active {
+          font-size: 20px;
+          color: $active-color;
         }
       }
     }

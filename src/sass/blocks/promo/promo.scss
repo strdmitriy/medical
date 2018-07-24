@@ -1,0 +1,13 @@
+.promo {
+  position: relative;
+  &__number {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    color: $grey-text;
+    font-size: 30px;
+    &--active {
+      color: $active-color;
+      }
+  }
+}
