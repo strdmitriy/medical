@@ -10,5 +10,9 @@
 @import "blocks/logo/logo.scss";
 @import "blocks/btn-user/btn-user.scss";
 @import "blocks/navigation/navigation.scss";
+@import "blocks/promo/promo.scss";
 @import "blocks/slider/slider.scss";
 @import "blocks/btn-slider/btn-slider.scss";
+@import "blocks/education-program/education-program.scss";
+@import "blocks/programm/programm.scss";
+@import "blocks/programm-btn/programm-btn.scss";

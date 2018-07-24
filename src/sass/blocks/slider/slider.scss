@@ -48,7 +48,7 @@
 @media (min-width: 768px) {
   .slider {
     &__wrapper {
-      align-items: center
+      display: block;
     }
   }
 }
