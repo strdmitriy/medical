@@ -16,3 +16,11 @@
 @import "blocks/education-program/education-program.scss";
 @import "blocks/programm/programm.scss";
 @import "blocks/programm-btn/programm-btn.scss";
+@import "./blocks/teacher/teacher.scss";
+@import "./blocks/speaker/speaker.scss";
+@import "./blocks/documents/documents.scss";
+@import "./blocks/schedule/schedule.scss";
+@import "./blocks/submit-form/submit-form.scss";
+@import "./blocks/description/description.scss";
+@import "./blocks/disciplines/disciplines.scss";
+@import "./blocks/partners/partners.scss";

@@ -1,0 +1,87 @@
+.description {
+  &__text {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__inner-wrapper {
+    display: block;
+    width: 200px;
+    margin: 0 auto 5px 80px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 5px;
+    color: #f82649;
+  }
+
+  &__item {
+    position: relative;
+    width: 280px;
+    padding: 20px 0;
+
+    &--icon::before {
+      position: absolute;
+      content: "";
+      left: 10px;
+      top: 25px;
+      background: url("../../../img/medical-sprite.png");
+    }
+
+    &--doc::before {
+      width: 46px;
+      height: 60px;
+      background-position: -50px -10px;
+    }
+
+    &--bigtime::before {
+      width: 40px;
+      height: 40px;
+      background-position: -101px -185px;
+    }
+
+    &--type::before {
+      width: 47px;
+      height: 60px;
+      background-position: -154px -10px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .description {
+
+    &__title {
+      display: block;
+    }
+    &__wrapper {
+      display: flex;
+      width: 700px;
+      margin-left: 0;
+    }
+    &__text {
+      width: 500px;
+      padding-top: 50px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    &__items {
+      width: 300px;
+      padding-left: 40px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 326px;
+        background-color: #d7dde2;
+      }
+    }
+  }
+}

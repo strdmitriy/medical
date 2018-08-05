@@ -6,9 +6,7 @@
   }
   &-1 {
     background-image: url('../../../img/slide-bg1-index.jpg');
-    background-position: center -118px;
     background-repeat: no-repeat;
-
   }
   &__date {
     margin: 0;
@@ -18,6 +16,21 @@
     font-size: 28px;
     font-weight: 400;
     color: #4f87fb;
+
+    &--inner {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      padding: 5px 0;
+      color: #ffffff;
+      background: #4f87fb;
+      width: 150px;
+      margin-left: 20px;
+    }
+    &--width {
+      width: 120px;
+      padding: 10px;
+    }
   }
   &__event {
     box-sizing: border-box;
@@ -32,6 +45,22 @@
     color: #ffffff;
     background: #4f87fb;
     text-transform: uppercase;
+
+    &--inner {
+      font-size: 18px;
+      line-height: 24px;
+      background: transparent;
+      color: $grey-text;
+      width: 250px;
+      padding: 0;
+      text-transform: unset;
+      font-weight: 700;
+      margin-left: 20px;
+    }
+    &--schedule {
+      font-size: 34px;
+      line-height: 36px;
+    }
   }
   &__name {
     margin: 0;
@@ -42,11 +71,72 @@
     font-weight: 900;
     color: #585868;
     text-transform: uppercase;
+
+    &--inner {
+      margin-bottom: 0;
+      margin-left: 20px;
+      width: 250px;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: unset;
+      font-weight: 300;
+    }
+    &--schedule {
+      font-size: 24px;
+      line-height: 26px;
+    }
   }
+}
+.slider--inner {
+  background-image: url('../../../img/header-conf.jpg');
+  background-position: center -118px;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
   .slider {
+    &-1 {
+      background-position: top right;
+    }
+    &__date {
+      margin-top: 176px;
+    }
+    &__name {
+      width: 415px;
+      font-size: 35px;
+    }
+    &__wrapper {
+      align-items: flex-end;
+    }
+    &__date--inner {
+      font-size: 18px;
+    }
+    &__event--inner {
+      font-size: 28px;
+      width: 400px;
+      margin-bottom: 10px;
+    }
+    &__name--inner {
+      font-size: 22px;
+      width: 400px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  .slider {
+    &-1 {
+      background-position: center -118px;
+    }
+    &__date {
+      margin-top: 80px;
+    }
+    &__name {
+      margin-bottom: 80px;
+      width: 560px;
+      font-size: 65px;
+    }
     &__wrapper {
       display: block;
     }
