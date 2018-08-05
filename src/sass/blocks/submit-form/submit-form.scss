@@ -101,8 +101,8 @@
   content: "";
   z-index: 1;
   position: absolute;
-  top: 0px;
-  left: -32px;
+  top: 3px;
+  left: -33px;
   width: 18px;
   height: 18px;
   background-color: transparent;
@@ -206,5 +206,9 @@
       font-size: 18px;
       font-weight: 700;
     }
+  }
+  .submit-form__checkbox:checked+.submit-form__label::before {
+    top: 0px;
+    left: -47px;
   }
 }
