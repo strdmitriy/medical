@@ -1,0 +1,74 @@
+.documents {
+  background-color: #f4f4f4;
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    color: $grey-text;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  &__descr {
+    text-align: center;
+    color: #585868;
+  }
+
+  &__inner-wrapp {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 40px;
+      bottom: 100px;
+
+
+      width: 35px;
+      height: 34px;
+      background: url("../../../img/medical-sprite.png");
+      background-position: -200px -90px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .documents {
+
+    &__title {
+      text-align: left;
+      margin-left: 60px;
+      margin-bottom: 20px;
+    }
+    &__wrapper {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 60px;
+      width: 300px;
+    }
+    &__inner-wrapp {
+
+      &::after {
+        right: 10px;
+        bottom: 120px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .documents {
+    &__inner-wrapp {
+      display: flex;
+      &::after {
+        right: 120px;
+        bottom: 30px;
+      }
+    }
+    &__descr {
+        align-self: flex-end;
+        //margin-left: 40px;
+    }
+  }
+}

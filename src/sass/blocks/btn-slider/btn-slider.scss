@@ -6,4 +6,12 @@
   color: $white;
   background: $active-color;
   border-radius: 5px;
+
+  &--inner {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0;
+    width: 200px;
+    outline: none;
+  }
 }
