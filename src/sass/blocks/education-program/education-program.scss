@@ -43,6 +43,20 @@
     &.active-tab {
       display: flex;
       flex-wrap: wrap;
+      opacity: 1;
+      transition: 1s;
+    }
+  }
+  &__add {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    p {
+      margin-right: 45px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $bg-date;
+      text-transform: uppercase;
     }
   }
 }

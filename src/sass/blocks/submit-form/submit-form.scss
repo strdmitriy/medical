@@ -15,11 +15,11 @@
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #dbdbdb;
-
+    outline: none;
     &:focus::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: #585868;
-      opacity: 1;
+      opacity: 0.5;
       /* Firefox */
     }
 
@@ -79,17 +79,21 @@
     line-height: 26px;
     font-weight: 400;
     text-transform: none;
+    color: $grey-text;
     cursor: pointer;
 
     &::after {
       content: "";
       position: absolute;
       left: -30px;
-      top: 10px;
+      top: 15px;
       width: 25px;
       height: 25px;
       background: #4f87fb;
       border-radius: 7px;
+    }
+    a {
+      color: $grey-text;
     }
   }
 }
@@ -128,7 +132,7 @@
     &__line {
       display: flex;
       flex-direction: row;
-      width: 650;
+      width: 650px;
       margin: 0 auto;
     }
 
@@ -151,10 +155,56 @@
       }
     }
     &__label {
+      left: 30px;
       font-size: 14px;
     }
   }
   .submit-form__checkbox:checked+.submit-form__label::before {
   //  left: -10px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .submit-form {
+    padding-bottom: 50px;
+    &__line {
+      width: 1140px;
+      justify-content: space-between;
+    }
+    &__label {
+      left: 45px;
+      &::after {
+        top: 10px;
+        left: -45px;
+      }
+    }
+    &__title {
+      margin: 0;
+      padding: 0;
+      margin-top: 56px;
+      margin-bottom: 25px;
+      text-align: left;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    &__wrapper {
+      width: 1140px;
+    }
+    &__input {
+      width: 265px;
+      margin-left: 0;
+      padding: 10px 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: $grey-text;
+      padding-left: 20px;
+    }
+    &__btn {
+      padding: 19px 0;
+      margin-bottom: 20px;
+      width: 265px;
+      font-size: 18px;
+      font-weight: 700;
+    }
   }
 }

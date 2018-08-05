@@ -13,6 +13,7 @@
 @import "blocks/promo/promo.scss";
 @import "blocks/slider/slider.scss";
 @import "blocks/btn-slider/btn-slider.scss";
+@import "blocks/btn-add-programm/btn-add-programm.scss";
 @import "blocks/education-program/education-program.scss";
 @import "blocks/programm/programm.scss";
 @import "blocks/programm-btn/programm-btn.scss";
