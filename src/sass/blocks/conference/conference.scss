@@ -1,0 +1,13 @@
+.conference {
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    .programm {
+      width: 270px;
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

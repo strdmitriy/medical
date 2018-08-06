@@ -236,7 +236,7 @@
           <div class="count__num">
             <p>11</p>
           </div>
-          <div class="count__text">
+          <div class="count__text count__text">
             <p>программ  профпереподготовки</p>
           </div>
         </div>
@@ -259,7 +259,7 @@
           </div>
         </div>
 
-        <div class="count__wrapper count__wrapper--cvality">
+        <div class="count__wrapper count__wrapper--qualifications">
           <div class="count__num">
             <p>57</p>
           </div>
@@ -280,6 +280,68 @@
       </p>
     </div>
   </section>
+  <section class="conference">
+    <div class="container">
+      <p class="conference__title">Конференции</p>
+      <a href="" class="conference__all">Смотреть все</a>
+      <div class="conference__slider">
+
+        <div class="programm" width="270">
+          <div class="programm__img">
+            <div class="programm__date">12 декабря 2018</div>
+          </div>
+          <p class="programm__title">Терапия</p>
+          <p class="programm__text">Повышение квалификации</p>
+          <button class="programm-btn">Принять участие</button>
+        </div>
+
+        <div class="programm" width="270">
+          <div class="programm__img">
+            <div class="programm__date">12 декабря 2018</div>
+          </div>
+          <p class="programm__title">Терапия</p>
+          <p class="programm__text">Повышение квалификации</p>
+          <button class="programm-btn">Принять участие</button>
+        </div>
+
+        <div class="programm" width="270">
+          <div class="programm__img">
+            <div class="programm__date">12 декабря 2018</div>
+          </div>
+          <p class="programm__title">Терапия</p>
+          <p class="programm__text">Повышение квалификации</p>
+          <button class="programm-btn">Принять участие</button>
+        </div>
+
+        <div class="programm" width="270">
+          <div class="programm__img">
+            <div class="programm__date">12 декабря 2018</div>
+          </div>
+          <p class="programm__title">Терапия</p>
+          <p class="programm__text">Повышение квалификации</p>
+          <button class="programm-btn">Принять участие</button>
+        </div>
+
+        <div class="programm">
+          <div class="programm__img">
+            <div class="programm__date">12 декабря 2018</div>
+          </div>
+          <p class="programm__title">Терапия</p>
+          <p class="programm__text">Повышение квалификации</p>
+          <button class="programm-btn">Принять участие</button>
+        </div>
+
+        <div class="programm" width="270">
+          <div class="programm__img">
+            <div class="programm__date">12 декабря 2018</div>
+          </div>
+          <p class="programm__title">Терапия</p>
+          <p class="programm__text">Повышение квалификации</p>
+          <button class="programm-btn">Принять участие</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="js/menu.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/tabs.js"></script>
@@ -289,9 +351,56 @@
     slickCurrentSlide: '.slickCurrentSlide',
     prevArrow: '<button class="slick-prev slick-arrow--red" aria-label="Previous" type="button">Previous</button>',
     nextArrow: '<button class="slick-next slick-arrow--red" aria-label="Next" type="button">Next</button>',
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrow: false,
+        prevArrow: false,
+        nextArrow: false,
+      }
+    },
+  ]
   });
   $(".promo__slider").on('afterChange', function(event, slick, currentSlide){
      $(".promo__number--active").text(currentSlide + 1);
+  });
+  $('.conference__slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
   </script>
 </body>
