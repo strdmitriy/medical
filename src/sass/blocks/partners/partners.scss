@@ -1,7 +1,9 @@
 .partners {
   background-color: #f4f4f4;
   padding-bottom: 20px;
-
+  &--index {
+    padding-bottom: 40px;
+  }
   &__title {
     margin: 0;
     padding-top: 30px;
@@ -20,6 +22,11 @@
   &__slider {
     width: 240px;
     margin: 0 auto;
+    &--index {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &__slider-img {
     margin: 10px 0;
@@ -32,11 +39,18 @@
 
 @media (min-width: 768px) {
   .partners {
-
+    &--index {
+      padding-bottom: 60px;
+    }
     &__title {
       font-size: 24px;
       text-align: left;
       margin-left: 40px;
+      &--index {
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 80px;
+      }
     }
     &__inner-wrapp {
       display: flex;
@@ -52,9 +66,17 @@
       display: flex;
       flex-wrap: wrap;
       width: 600px;
+      &--index {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
     &__slider-img {
       margin: 10px 20px;
+      &--center {
+        align-self: center;
+      }
     }
   }
 }

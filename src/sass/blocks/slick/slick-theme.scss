@@ -70,7 +70,7 @@ $slick-opacity-not-active: 0.25 !default;
     background: $slider-arrow;
     cursor: pointer;
     color: transparent;
-    top: 88%;
+    bottom: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -92,7 +92,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    right: 450px;
+    right: 0;
     z-index: 1;
     [dir="rtl"] & {
         left: auto;
@@ -107,7 +107,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 390px;
+    right: 20px;
     [dir="rtl"] & {
         left: -25px;
         right: auto;

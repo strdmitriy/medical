@@ -5,6 +5,8 @@
     flex-direction: column;
   }
   &-1 {
+    display: inline-block;
+    width: 100%;
     background-image: url('../../../img/slide-bg1-index.jpg');
     background-repeat: no-repeat;
   }

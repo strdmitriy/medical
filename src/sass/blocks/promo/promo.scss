@@ -10,4 +10,12 @@
       color: $active-color;
       }
   }
+  &__prev-arrow {
+    top: 88%;
+    right: 450px;
+  }
+  &__next-arrow {
+    top: 88%;
+    right: 390px;
+  }
 }

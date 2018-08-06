@@ -1,13 +1,53 @@
 .conference {
+  position: relative;
+  margin-bottom: 50px;
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 70px;
+    font-weight: 500;
+    color: $grey-text;
+  }
+  &__all {
+    text-decoration: none;
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      color: $active-color;
+    }
+  }
   &__slider {
     display: flex;
     justify-content: space-between;
-    .programm {
-      width: 270px;
-      margin-right: 25px;
-      &:last-child {
-        margin-right: 0;
-      }
+  }
+  .programm {
+    outline: none;
+    margin: 0 auto;
+  }
+  &__number {
+    position: absolute;
+    left: 49%;
+    color: $grey-text;
+    font-size: 30px;
+    &--active {
+      color: $active-color;
     }
+  }
+  &-arrow {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__prev-arrow {
+    position: relative;
+    display: none;
+    margin-right: 30px;
+    top: 20px;
+  }
+  &__next-arrow {
+    position: relative;
+    display: none;
+    top: 20px;
   }
 }

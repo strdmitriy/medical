@@ -583,10 +583,6 @@
 
             _.$slider.empty().append(newSlides);
             _.$slider.children().children().children()
-                .css({
-                    'width':(100 / _.options.slidesPerRow) + '%',
-                    'display': 'inline-block'
-                });
 
         }
 
