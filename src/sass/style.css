@@ -27,3 +27,6 @@
 @import "./blocks/partners/partners.scss";
 @import "blocks/pulpit/pulpit.scss";
 @import "blocks/conference/conference.scss";
+@import "blocks/footer-main/footer-main.scss";
+@import "blocks/footer-logo/footer-logo.scss";
+@import "blocks/about/about.scss";

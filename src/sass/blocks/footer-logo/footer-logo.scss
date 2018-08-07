@@ -1,0 +1,27 @@
+.footer-logo {
+  display: flex;
+  width: 240px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  &__img {
+    width: 45px;
+    height: 45px;
+  }
+  &__text {
+    margin: 0;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+
+@media (min-width: 1140px) {
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}

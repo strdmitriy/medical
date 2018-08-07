@@ -1,0 +1,80 @@
+.footer-main {
+  padding-top: 65px;
+  background: $grey-text;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-bottom: 2px solid $footer-input-email;
+    align-items: center;
+    input[type="email"] {
+      &::placeholder {
+        color: $footer-input-email;
+      }
+    }
+  }
+  &__email-wrapper {
+    position: relative;
+  }
+  &__email {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $footer-input-email;
+    background: transparent;
+    border: 2px solid $footer-input-email;
+    outline: none;
+  }
+  &__phone {
+    position: relative;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: $white;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 10px;
+      height: 21px;
+      top: 6px;
+      left: -15px;
+      background-image: url('../../../img/medical-sprite.png');
+      background-position: -317px -144px;
+    }
+    span {
+      font-size: 19px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-main {
+    &__email {
+      width: 670px;
+    }
+    padding-top: 30px;
+    &__phone {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  .footer-main {
+    &__info {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 65px;
+      align-items: center;
+    }
+    &__phone {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
