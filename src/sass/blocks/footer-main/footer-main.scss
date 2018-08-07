@@ -15,8 +15,20 @@
   }
   &__email-wrapper {
     position: relative;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 42px;
+      height: 36px;
+      right: 25px;
+      top: 16px;
+      background-image: url('../../../img/medical-sprite.png');
+      background-position: -255px -104px;
+    }
   }
   &__email {
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     height: 75px;

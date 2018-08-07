@@ -1,0 +1,46 @@
+.copyrigth {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  &__company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      color: $white;
+    }
+    img {
+      width: 145px;
+      height: 54px;
+    }
+  }
+  &__institute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      color: $input-color-placeholder;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  .copyrigth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__company {
+      flex-direction: row;
+      width: 400px;
+      justify-content: space-between;
+    }
+  }
+}
